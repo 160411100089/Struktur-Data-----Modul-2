@@ -42,9 +42,9 @@ Operasi-operasi dasar dalam stack:
 	st=stack()
 	isEmpty(st)
 	
->>>
-Running : True
-
+	>>>
+	Running : True
+________________________________________________________________________________________________________________________________________
 	push(st,100)
 	push(st,23)
 	push(st,34)
@@ -53,8 +53,8 @@ Running : True
 	pop(st)
 	print(st)
 	
->>>
-Running : [100, 23]
+	>>>
+	Running : [100, 23]
 
 #Ekspressi Aritmatik Infix, Prefix, Postfix
 
@@ -124,8 +124,8 @@ evaluasi untuk ekspressi aritmatika Postfix dilakukan setelah terdapat dua buah 
 
 	print(evaluatePost('45-6*'))
 
->>>
-Running : -6.0
+	>>>
+	Running : -6.0
 
 B. Queue
 
