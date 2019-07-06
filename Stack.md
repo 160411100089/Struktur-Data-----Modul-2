@@ -42,6 +42,7 @@ Operasi-operasi dasar dalam stack:
 	st=stack()
 	isEmpty(st)
 	
+>>>
 Running : True
 
 	push(st,100)
@@ -52,6 +53,7 @@ Running : True
 	pop(st)
 	print(st)
 	
+>>>
 Running : [100, 23]
 
 #Ekspressi Aritmatik Infix, Prefix, Postfix
@@ -122,6 +124,7 @@ evaluasi untuk ekspressi aritmatika Postfix dilakukan setelah terdapat dua buah 
 
 	print(evaluatePost('45-6*'))
 
+>>>
 Running : -6.0
 
 B. Queue
@@ -206,6 +209,7 @@ Gunakan fungsi-fungsi yang terdapat pada modul stack untuk membalik suatu kata. 
 
 	stack.reverseWord('kita')
 	
+	>>>
 	Running : 'atik'
 	
 2.	decToBin(num) :
@@ -214,6 +218,7 @@ Gunakan fungsi-fungsi yang terdapat pada modul stack untuk mengkonversi suatu bi
 
 	stack.decToBin(12)
 	
+	>>>
 	Running : '1100'
 	
 3. evaluatePost(str):
@@ -234,22 +239,26 @@ Berikut adalah contoh penggunaan fungsi evaluatePost(str):
 
 	a = '6 0 81'
 	evaluatePost(a)
-
+	
+	>>>
 	Running: Error : Terlalu Banyak Operand
 	
 	a = '8 7 + 0/'
 	evaluatePost(a)
 	
+	>>>
 	Running: Error : Pembagian dengan Nol
 	
 	a = '21 2 + * /'
 	evaluate Post(a)
 	
+	>>>
 	Running: Error : Operand terlalu sedikit
 	
 	a = '10 11 1 + - 5 *'
 	evaluatePost(a)
 	
+	>>>
 	Running: -10.0
 	
 4.	parenthesesCheck(str):
@@ -266,15 +275,19 @@ o  Kurung buka dan kurung tutup tidaklah cocok
 *Contoh penggunaan fungsi dan output yang dihasilkan, dapat dilihat pada contoh berikut
 
 	parenthesesCheck('{(3 + 5)*(9 - 2)}')
+	>>>
 	Running : (true, 'Tidak ada Error')
 	
 	parenthesesCheck('21/(56 + 2)')
+	>>>
 	Running : (False, 'Jumlah Kurung Buka Lebih Banyak')
 	
 	parenthesesCheck('(4 -5)/12 + 7')
+	>>>
 	Running : (False, 'Jumlah Kurung Tutup Lebih Banyak')
 	
 	parenthesesCheck('67*(5 + 2)/(12 - 6'))
+	>>>
 	Running : (False, 'Kurung Buka dan Kurung Tutup tidak Cocok')
 	
 Jawaban Praktikum
@@ -482,5 +495,3 @@ Jawaban Praktikum
         		cek = False
     		return cek, eror
 	parenthesCheck("{ (3+4)*(9-2)}")
-            
-            
